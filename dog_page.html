@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Dog Page</title>
+        <link rel="stylesheet" href="assignment2.css">
+        <script src='assignment2.js' defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+    </head>
+    <body>
+         <!-- Header Section -->
+         <header>
+            <h1>INST377 - Doggos</h1>
+        </header>
+         <!-- Navigation Section -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="stocks_page.html">Stocks</a></li>
+            <li><a href="dog_page.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <!-- Main text Area -->
+    <div class="main-content-dogs">
+        <h1>Doggos! 🐶🐶</h1>
+
+        <!--Dog carousel-->
+        <div id = randDogs style="width:612px; height:612px" data-simple-slider>
+          </div>
+          
+        <br>
+
+        <!--Dog Buttons-->  
+        <div id="dog_butts">
+        </div>
+        
+        <br>
+
+        <!--Dog Facts-->
+        <div id="dog_Facts">
+        </div>
+
+        <!--Audio Section-->
+        <div class="audio_section">
+            <h1>In this web page there are options to Navigate using Audio!</h1>
+            <a>Ensure your Mic is enabled to be able to use this feature. </a>
+
+            <ul style="list-style-type:disc;">
+                <li>Load Dog Breed</li>
+                <ul style="list-style-type:circle;">
+                    <li>Say: Load: Dog Breed Name</li>
+                </ul>
+
+
+                <li>Navigate to a Different Page</li>
+                <ul style="list-style-type:circle;">
+                    <li>Say: Navigate to page</li>
+                </ul>
+
+                <li>Change the Page Color</li>
+                <ul style="list-style-type:circle;">
+                    <li>Say: Change the color to color</li>
+                </ul>
+
+                <li>Say Hello Back to you!</li>
+                <ul style="list-style-type:circle;">
+                    <li>Say: Hello</li>
+                </ul>
+
+              </ul>
+
+              <!--Audio Buttons-->
+              <button class="button-24" onclick = "audio_on()" role="button">Turn On Listening</button>
+              <button class="button-24" onclick = "annyang.abort()" role="button">Turn off Listening</button>
+
+
+
+        </div>
+
+
+    
+    
+    
+    
+    </div>
+
+
+
+
+    </body>
+</html>
